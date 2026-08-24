@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/style.css"> 
+
+<title>Classic Motor Club</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#d8c8b6;
+}
+
+/* NAVBAR */
+header{
+background:#5a4330;
+padding:15px 30px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:white;
+border:1px solid #888;
+padding:10px 20px;
+
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+border:1px solid #888;
+padding:10px 20px;
+}
+
+
+/* HERO */
+
+.hero{
+background:#85603f;
+height:250px;
+display:flex;
+align-items:center;
+padding-left:40px;
+}
+
+.hero h1{
+font-size:3rem;
+color:#111;
+}
+
+
+
+/* CONTENT */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+
+/* BILSEKTION */
+
+.cars-section{
+background:#111;
+color:white;
+padding:25px;
+margin-top:15px;
+margin-bottom:30px;
+}
+
+.cars-section h2{
+text-align:center;
+margin-bottom:20px;
+font-size:1.2rem;
+border-bottom:1px solid gray;
+padding-bottom:10px;
+}
+
+
+
+/* KATEGORIER */
+
+.categories{
+
+display:flex;
+justify-content:space-between;
+gap:20px;
+}
+
+.card{
+flex:1;
+text-align:center;
+}
+
+
+.image-placeholder{
+height:180px;
+background:#5a4330;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:1.5rem;
+}
+
+
+.card h3{
+margin-top:10px;
+background:#85603f;
+padding:8px;
+color:white;
+}
+
+
+.card a{
+text-decoration:none;
+}
+
+
+/* RESPONSIV */
+
+@media(max-width:768px)
+{
+
+.categories{
+flex-direction:column;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+nav{flex-direction:column;
+gap:10px;
+flex-direction:column;
+gap:10px;
+}
+}
+
+</style>
+</head>
+<body>
+<header>
+<nav>
+
+
+
+<div class="logo">Classic Motor Club</div>
+<div class="nav-links">
+<a href="#">OM OSS</a>
+<a href="#">KONTAKTA OSS</a>
+</div>
+</nav>
+</header>
+
+
+<section class="hero">
+
+<h1>Klassiska bilar till salu</h1>
+</section>
+<div class="container">
+
+
+<section class="cars-section">
+<h2>
+Upptäck våra utvalda klassiska bilar från 70,80 och 90-talet
+</h2>
+<div style="text-align:center; margin-bottom:20px;">
+
+
+<strong>SE BILAR</strong>
+</div>
+
+
+<div class="categories">
+<div class="card">
+<div class="image-placeholder car70"></div>
+<h3>70-TALS BILAR</h3>
+</div>
+
+<div class="card">
+<div class="image-placeholder car80"></div>
+<h3>80-TALS BILAR</h3>
+</div>
+
+
+<div class="card"> 
+<div class="image-placeholder car90"></div>
+<h3>90-TALS BILAR</h3>
+</div>
+
+</div>
+</section>
+
+</div>
+</body>
+</html>
