@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dina Tidlösa Klassiker</title>
+    <!--Gemensamma stylingen till vår header och footer-->
+    <link rel="stylesheet" href="layout.css">
+    <!--Stilen för själva startsidan-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header"> 
+        <!-- Klickbart företagsnamn som tar dig till startsidan -->
+        <a href="front_page.html" class="logo">
+            <h1>Dina Tidlösa Klassiker</h1>
+        </a>
+  
+        <nav class="main-nav">
+            <a href="front_page.html">Hem</a>
+            <a href="#">Om oss</a>
+            <a href="#">Kontakta oss</a>
+            <a href="#">Produkter</a>
+        </nav>
+    </header>
+
+    <main> 
+        <!-- Hero Sektion -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Tidlösa bilikoner</h2>
+                <p>Upplev bilhistoriens mest ikoniska eror.</p>
+                <a href="#utbud" class="btn">Utforska Showroom</a>
+            </div>
+        </section>
+
+        <!-- Kategori Sektion -->
+        <section id="utbud" class="categories-section">
+            <h2>Utforska vårt utbud efter decennium</h2>
+
+            <div class="category-grid">
+
+                <!-- 60-talet -->
+                <a href="kategori-60tal.html" class="card card-60s">
+                    <img src="60tals_bil.jpeg" alt="Klassisk 60-talsbil">
+                    <div class="card-body">
+                        <h3>60-talet</h3>
+                        <p>Underbara bilar från 60-talet</p>
+                        <span class="btn-link">Se alla bilar</span>
+                    </div>
+                </a>
+
+                <!-- 70-talet -->
+                <a href="kategori-70tal.html" class="card card-70s">
+                    <img src="70tals_bil.jpeg" alt="Klassisk 70-talsbil">
+                    <div class="card-body">
+                        <h3>70-talet</h3>
+                        <p>Underbara bilar från 70-talet</p>
+                        <span class="btn-link">Se alla bilar</span>
+                    </div>
+                </a>
+
+                <!-- 80-talet -->
+                <a href="kategori-80tal.html" class="card card-80s">
+                    <img src="80tals_bil.jpeg" alt="Klassisk 80-talsbil">
+                    <div class="card-body">
+                        <h3>80-talet</h3>
+                        <p>Underbara bilar från 80-talet</p>
+                        <span class="btn-link">Se alla bilar</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Månadens Klassiker -->
+        <section class="featured-section">
+            <h2>Månadens klassiker</h2>
+            <article class="featured-card">
+                <p>Här kan vi lyfta fram en specifik bil!</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div>
+                <h3>Dina Tidlösa Klassiker</h3>
+                <p>Specialiserad handel med klassiska bilar.</p>
+            </div>
+            <div>
+                <h4>Kontakt</h4>
+                <p>E-post: info@tidlosaklassiker.se</p>
+                <p>Telefon: 010-123 45 67</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dina Tidlösa Klassiker. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
