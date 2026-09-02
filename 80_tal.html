@@ -9,12 +9,12 @@
    <body> 
 
 <header class="main-header">
-        <a href="front_page.html" class="logo">
+        <a href="frontpaage.html" class="logo">
             <h1>Dina Tidlösa Klassiker</h1>
         </a>
   
         <nav class="main-nav">
-            <a href="front_page.html">Hem</a>
+            <a href="frontpaage.html">Hem</a>
             <a href="about.html">Om oss</a>
             <a href="#">Kontakta oss</a>
             <a href="#">Produkter</a>
@@ -22,57 +22,67 @@
     </header>
 
 <section class="hero">
-<h1>80-talets retrobilar</h1>
-<p>Utforska några av de mest ikoniska bilarna från 1980-talet</p>
+    <h1>80-talets retrobilar</h1>
+    <p>Utforska några av de mest ikoniska bilarna från 1980-talet</p>
 </section>
 
 <main>
 
-<section>
+    <section>
+        <article class="bil" itemscope itemtype="https://schema.org/product">
+            <img src="images/toyota-supra-mk3.jpg" alt="Toyota Supra Mk3" itemprop="image">
+            <div class="info"> 
+                <hgroup>
+                    <h3 itemprop="name">Toyota Supra Mk3</h3>
+                    <p itemprop="brand">Toyota</p>
+                </hgroup>
+            <p>Årsmodell: <span itemprop="releasedate">1986</span></p>
+            <p>Land: Japan</p>
+            <p itemprop="offers" itemscope itemtype="https://schema.org/Offer"></p>
+            <p>Kategori: Sportbil <meta itemprop="category" content="Sportbil"></p>
+            <p>Pris: <span itemprop="price">299 000</span> kr</p>
+            <meta itemprop="priceCurrency" content="SEK"> 
+            <p>Klicka för mer info</p> <a href="toyota.html" itemprop="url">Mer info</a>
+        </div>
+    </article>
+    
+    <article class="bil" itemscope itemtype="https://schema.org/product">
+        <img src="images/bmw-m3-e30.jpeg" alt="BMW M3 E30" itemprop="image">
+        <div class="info">
+            <hgroup> 
+                <h3 itemprop="name">BMW M3 E30</h3>
+                <p itemprop="brand">BMW</p>
+            </hgroup> 
 
+            <p>Årsmodell: <span itemprop="releasedate">1986</span></p>
+            <p>Land: Tyskland</p>
 
-<article class="bil">
-<img src="images/toyota-supra-mk3.jpg" alt="Toyota Supra Mk3">
+            <p itemprop="offers" itemscope itemtype="https://schema.org/Offer"></p>
+            <p>Kategori: Sportbil <meta itemprop="category" content="Sportbil"></p>
+            <p>Pris: <span itemprop="price">349 000</span> kr</p>
+            <meta itemprop="priceCurrency" content="SEK"> 
+            <p>Klicka för mer info</p> <a href="bmw.html" itemprop="url">Mer info</a>
+        </div>
+    </article>
 
-<div class="info"> 
-<h3>Toyota Supra Mk3</h3>
-<p>Årsmodell: 1986</p>
-<p>Land: Japan</p>
-<p>Kategori: Sportbil</p>
-<p>Pris: 299 000 kr</p>
-<p>Klicka för mer info</p> <a href="toyota.html">Mer info</a>
+   <article class="bil" itemscope itemtype="https://schema.org/product">
+        <img src="images/ferrari-testarossa.webp" alt="Ferrari Testarossa" itemprop="image">
+        <div class="info"> 
+            <hgroup></hgroup>
+                <h3 itemprop="name">Ferrari Testarossa</h3>
+                <p itemprop="brand">Ferrari</p>
+            </hgroup>
 
-</div>
+        <p>Årsmodell: <span itemprop="releasedate">1984</span></p>
+        <p>Land: Italien</p>
+
+        <p itemprop="offers" itemscope itemtype="https://schema.org/Offer"></p>
+        <p>Kategori: Sportbil <meta itemprop="category" content="Sportbil"></p>
+        <p>Pris: <span itemprop="price">1 200 000</span> kr</p>
+        <meta itemprop="priceCurrency" content="SEK"> 
+        <p>Klicka för mer info</p> <a href="ferrari.html" itemprop="url">Mer info</a> 
+    </div>
 </article>
-
-
-<article class="bil"> 
-<img src="images/bmw-m3-e30.jpeg" alt="BMW M3 E30">
-
-<div class="info">
-<h3>BMW M3 E30</h3>
-<p>Årsmodell: 1986</p>
-<p>Land: Tyskland</p>
-<p>Kategori: Sportbil</p>
-<p>Pris: 349 000 kr</p>
-<p>Klicka för mer info</p> <a href="bmw.html">Mer info</a> 
-</div>
-</article>
-
-
-<article class="bil">
-<img src="images/ferrari-testarossa.webp" alt="Ferrari Testarossa">
-
-<div class="info"> 
-<h3>Ferrari Testarossa</h3>
-<p>Årsmodell: 1984</p>
-<p>Land: Italien</p>
-<p>Kategori: Sportbil</p>
-<p>Pris: 1 200 000 kr</p>
-<p>Klicka för mer info</p> <a href="ferrari.html">Mer info</a> 
-</div>
-</article>
-
 
 </section>
 </main>
