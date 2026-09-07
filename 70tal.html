@@ -39,52 +39,183 @@
 
             <div class="car-list">
 
-                <article class="car-card">
-                    <h3>Porsche 911 Turbo</h3>
+                <!-- Porsche -->
+                <article
+                    class="car-card"
+                    itemscope
+                    itemtype="https://schema.org/Product"
+                >
+
+                    <h3 itemprop="name">Porsche 911 Turbo</h3>
 
                     <img
                         src="porsche-911.jpg"
                         alt="Porsche 911 Turbo från 1970-talet"
+                        itemprop="image"
                     >
 
-                    <p>Årsmodell: 1975</p>
-                    <p>Land: Tyskland</p>
-                    <p>Kategori: Sport</p>
-                    <p>Pris: 1 250 000 kr</p>
+                    <p>
+                        Årsmodell:
+                        <span itemprop="model">1975</span>
+                    </p>
 
-                    <button>Köp</button>
+                    <p>
+                        Land:
+                        <span itemprop="countryOfOrigin">Tyskland</span>
+                    </p>
+
+                    <p>
+                        Kategori:
+                        <span itemprop="category">Sport</span>
+                    </p>
+
+                    <div
+                        itemprop="offers"
+                        itemscope
+                        itemtype="https://schema.org/Offer"
+                    >
+                        <p>
+                            Pris:
+                            <span itemprop="price" content="1250000">
+                                1 250 000
+                            </span>
+
+                            <span itemprop="priceCurrency" content="SEK">
+                                kr
+                            </span>
+                        </p>
+                    </div>
+
+                    <button
+                        class="buy-button"
+                        data-car="Porsche 911 Turbo"
+                        data-category="Sport"
+                        data-price="1250000"
+                        data-decade="1970"
+                    >
+                        Köp
+                    </button>
+
                 </article>
 
-                <article class="car-card">
-                    <h3>Ferrari 308 GTB</h3>
+
+                <!-- Ferrari -->
+                <article
+                    class="car-card"
+                    itemscope
+                    itemtype="https://schema.org/Product"
+                >
+
+                    <h3 itemprop="name">Ferrari 308 GTB</h3>
 
                     <img
                         src="ferrari-308-gtb.jpg"
                         alt="Ferrari 308 GTB från 1970-talet"
+                        itemprop="image"
                     >
 
-                    <p>Årsmodell: 1975</p>
-                    <p>Land: Italien</p>
-                    <p>Kategori: Sport / Lyx</p>
-                    <p>Pris: 1 450 000 kr</p>
+                    <p>
+                        Årsmodell:
+                        <span itemprop="model">1975</span>
+                    </p>
 
-                    <button>Köp</button>
+                    <p>
+                        Land:
+                        <span itemprop="countryOfOrigin">Italien</span>
+                    </p>
+
+                    <p>
+                        Kategori:
+                        <span itemprop="category">Sport / Lyx</span>
+                    </p>
+
+                    <div
+                        itemprop="offers"
+                        itemscope
+                        itemtype="https://schema.org/Offer"
+                    >
+                        <p>
+                            Pris:
+                            <span itemprop="price" content="1450000">
+                                1 450 000
+                            </span>
+
+                            <span itemprop="priceCurrency" content="SEK">
+                                kr
+                            </span>
+                        </p>
+                    </div>
+
+                    <button
+                        class="buy-button"
+                        data-car="Ferrari 308 GTB"
+                        data-category="Sport / Lyx"
+                        data-price="1450000"
+                        data-decade="1970"
+                    >
+                        Köp
+                    </button>
+
                 </article>
 
-                <article class="car-card">
-                    <h3>Chevrolet Corvette Stingray</h3>
+
+                <!-- Chevrolet -->
+                <article
+                    class="car-card"
+                    itemscope
+                    itemtype="https://schema.org/Product"
+                >
+
+                    <h3 itemprop="name">Chevrolet Corvette Stingray</h3>
 
                     <img
                         src="corvette-stingray.jpg"
                         alt="Chevrolet Corvette Stingray från 1970-talet"
+                        itemprop="image"
                     >
 
-                    <p>Årsmodell: 1972</p>
-                    <p>Land: USA</p>
-                    <p>Kategori: Sport</p>
-                    <p>Pris: 895 000 kr</p>
+                    <p>
+                        Årsmodell:
+                        <span itemprop="model">1972</span>
+                    </p>
 
-                    <button>Köp</button>
+                    <p>
+                        Land:
+                        <span itemprop="countryOfOrigin">USA</span>
+                    </p>
+
+                    <p>
+                        Kategori:
+                        <span itemprop="category">Sport</span>
+                    </p>
+
+                    <div
+                        itemprop="offers"
+                        itemscope
+                        itemtype="https://schema.org/Offer"
+                    >
+                        <p>
+                            Pris:
+                            <span itemprop="price" content="895000">
+                                895 000
+                            </span>
+
+                            <span itemprop="priceCurrency" content="SEK">
+                                kr
+                            </span>
+                        </p>
+                    </div>
+
+                    <button
+                        class="buy-button"
+                        data-car="Chevrolet Corvette Stingray"
+                        data-category="Sport"
+                        data-price="895000"
+                        data-decade="1970"
+                    >
+                        Köp
+                    </button>
+
                 </article>
 
             </div>
@@ -111,7 +242,10 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Dina Tidlösa Klassiker. Alla rättigheter förbehållna.</p>
+            <p>
+                &copy; 2026 Dina Tidlösa Klassiker.
+                Alla rättigheter förbehållna.
+            </p>
         </div>
 
     </footer>
