@@ -21,10 +21,12 @@
             <a href="#">Produkter</a>
         </nav>
     </header>
+<main>
+    <section>
 
 <div class="produkt-info"> 
      <img src="lambo.jpeg" alt="Lamborgini SR" width="500"> 
-
+</div>
 </div class="text"> 
      <h1>Lamborgini SR</h1> 
      <p> Klassisk Lamborgini SR från 1965 som kombinerar tidstypisk amerikansk sportbilsdesign, 
@@ -39,16 +41,19 @@
         </p>
 
     <hr> 
-     <p>Årsmodell: 1965</p>
+     <p>Årsmodell: <span itemprop="releasedate">1962</span></p>
      <p>Land: Japan</p>
-     <p>Kategori: Sportbil</p>
-     <p>Pris: 301000 kr</p>
-     <button>Köp</button>
+     <p>Kategori: Sportbil <meta itemprop="category" content="Sportbil"></p>
+     <p>Pris: <span itemprop="price">349000</span> kr</p>
+     <meta itemprop="priceCurrency" content="SEK">
+     <form id="purchase">
+        <input type="submit" value="Köp" />
+     </form>
    <a href="60_tals_bilar2.html">Tillbaka</a> 
     </div>
 <div> 
-     
-
+</section>
+</main>
 
     <footer class="main-footer">
         <div class="footer-content">

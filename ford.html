@@ -21,9 +21,12 @@
             <a href="#">Produkter</a>
         </nav>
     </header>
-
+    
+<main>
+    <section>
 <div class="produkt-info"> 
      <img src="ford.jpeg" alt="Ford Kuga" width="500"> 
+     </div>
 
 </div class="text"> 
      <h1>Ford Kuga</h1> 
@@ -39,17 +42,21 @@
         </p>
 
     <hr> 
-     <p>Årsmodell: 1962</p>
+     <p>Årsmodell: <span itemprop="releasedate">1962</span></p>
      <p>Land: Japan</p>
-     <p>Kategori: Sportbil</p>
-     <p>Pris: 301000 kr</p>
+     <p>Kategori: Sportbil <meta itemprop="category" content="Sportbil"></p>
+     <p>Pris: <span itemprop="price">299000</span> kr</p>
+     <meta itemprop="priceCurrency" content="SEK">
+     <form id="purchase">
+        <input type="submit" value="Köp" />
+     </form>
      <button>Köp</button>
    <a href="60_tals_bilar2.html">Tillbaka</a> 
     </div>
+    </section>
+</main>   
+
 <div> 
-     
-
-
     <footer class="main-footer">
         <div class="footer-content">
             <div>

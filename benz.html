@@ -22,8 +22,12 @@
         </nav>
     </header>
 
+<main>
+    <section>
+
 <div class="produkt-info"> 
      <img src="benz.jpg" alt="Lamborgini SR" width="500"> 
+     </div>
 
 </div class="text"> 
      <h1>Mercedes-Benz 300SL</h1> 
@@ -39,17 +43,22 @@
         </p>
 
     <hr> 
-     <p>Årsmodell: 1965</p>
+     <p>Årsmodell: <span itemprop="releaseDate">1965</span></p>
      <p>Land: Japan</p>
-     <p>Kategori: Sportbil</p>
-     <p>Pris: 301000 kr</p>
+     <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        Pris: <span itemprop="price">301000</span> kr
+        <meta itemprop="priceCurrency" content="SEK" />
+     </p>
+     <meta itemprop="category" content="Sportbil" />
      <button>Köp</button>
    <a href="60_tals_bilar2.html">Tillbaka</a> 
     </div>
-<div> 
-     
 
+    </section>
+</main>
 
+<div>
+    
     <footer class="main-footer">
         <div class="footer-content">
             <div>
