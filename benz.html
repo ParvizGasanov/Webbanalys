@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="sv">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="layout.css">
-        <title>Toyota Supra Mk3</title> 
-    </head>
-    <body> 
-
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KNKX34FH');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <title>Mercedes-Benz 300SL</title>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNKX34FH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <header class="main-header">
         <a href="front_page.html" class="logo">
             <h1>Dina Tidlösa Klassiker</h1>
         </a>
-  
+
         <nav class="main-nav">
             <a href="front_page.html">Hem</a>
             <a href="about.html">Om oss</a>
@@ -22,46 +32,37 @@
         </nav>
     </header>
 
-<main>
-    <section>
+    <main>
+        <section>
+            <div class="produkt-info">
+                <img src="benz.jpg" alt="Mercedes-Benz 300SL" width="500">
+            </div>
 
-<div class="produkt-info"> 
-     <img src="benz.jpg" alt="Lamborgini SR" width="500"> 
-     </div>
+            <div class="text">
+                <h1>Mercedes-Benz 300SL</h1>
+                <p>
+                    Klassisk Mercedes-Benz 300SL från 1960 som kombinerar tidstypisk tysk ingenjörskonst,
+                    körglädje och ikonisk 60-talskaraktär. En bil för dig som uppskattar den klassiska
+                    300SL-modellen med sina karakteristiska linjer och eleganta proportioner.
+                    En riktig entusiastbil och ett stycke bilhistoria som väcker uppmärksamhet vart den än kommer.
+                </p>
 
-</div class="text"> 
-     <h1>Mercedes-Benz 300SL</h1> 
-     <p> Klassisk Mercedes-Benz 300SL från 1960 som kombinerar tidstypisk amerikansk sportbilsdesign, 
-        körglädje och ikonisk 60-talskaraktär. En bil för dig som uppskattar den klassiska SR-modellen
-         med sina karakteristiska linjer, långa motorhuv och sportiga proportioner. 
+                <hr>
+                <p>Årsmodell: <span itemprop="releasedate">1960</span></p>
+                <p>Land: Italien</p>
+                <p>Kategori: Sportbil <meta itemprop="category" content="Sportbil"></p>
+                <p>Pris: <span itemprop="price">800000</span> kr</p>
+                <meta itemprop="priceCurrency" content="SEK">
 
-         Supran erbjuder en härlig körupplevelse med fokus på prestanda och körkänsla, 
-         samtidigt som den behåller den komfort och utrustning som gjorde modellen attraktiv 
-         redan på 80-talet. En riktig entusiastbil och ett stycke japansk bilhistoria som väcker 
-         uppmärksamhet vart den än kommer.
-        
-        </p>
+                <form id="purchase">
+                    <input type="submit" value="Köp" />
+                </form>
+                <button onclick="sendPurchaseData()">Köp</button>
+                <a href="60_tals_bilar2.html">Tillbaka</a>
+            </div>
+        </section>
+    </main>
 
-    <hr> 
-     <p>Årsmodell: <span itemprop="releaseDate">1965</span></p>
-     <p>Land: Japan</p>
-     <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        Pris: <span itemprop="price">301000</span> kr
-        <meta itemprop="priceCurrency" content="SEK" />
-          <form id="purchase">
-        <input type="submit" value="Köp" />
-     </form>
-     </p>
-     <meta itemprop="category" content="Sportbil" />
-     <button>Köp</button>
-   <a href="60_tals_bilar2.html">Tillbaka</a> 
-    </div>
-
-    </section>
-</main>
-
-<div>
-    
     <footer class="main-footer">
         <div class="footer-content">
             <div>
@@ -77,7 +78,53 @@
         <div class="footer-bottom">
             <p>&copy; 2026 Dina Tidlösa Klassiker. Alla rättigheter förbehållna.</p>
         </div>
-    </footer> 
+    </footer>
 
-<body>
+    <!-- 3. DATA LAYER SCRIPTS (LÄNGST NED I BODY PRECIS INNAN </body>) -->
+
+    <!-- Script 1: Skickar produktdatan för visning av bil när sidan laddas -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'view_item',
+            ecommerce: {
+                currency: 'SEK',
+                value: 800000,
+                items: [
+                    {
+                        item_id: 'benz_300sl_1960',
+                        item_name: 'Mercedes-Benz 300SL',
+                        item_category: 'Sportbil',
+                        price: 800000,
+                        quantity: 1
+                    }
+                ]
+            }
+        });
+    </script>
+
+    <!-- Script 2: Funktionen som skickar köpinformationen när man trycker på "Köp" -->
+    <script>
+        function sendPurchaseData() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'purchase',
+                ecommerce: {
+                    transaction_id: 'T_' + Math.floor(Math.random() * 100000),
+                    currency: 'SEK',
+                    value: 800000,
+                    items: [
+                        {
+                            item_id: 'benz_300sl_1960',
+                            item_name: 'Mercedes-Benz 300SL',
+                            item_category: 'Sportbil',
+                            price: 800000,
+                            quantity: 1
+                        }
+                    ]
+                }
+            });
+        }
+    </script>
+</body>
 </html>
