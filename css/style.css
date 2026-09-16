@@ -16,5 +16,41 @@ background-image:url("../images/80_tal_bil.jpeg");
 .car90{
 background-image:url("../images/90_tals_bil.jpg");
 }
+/* 70-talssidan */
 
- 
+.car-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 5%;
+}
+
+.car-card {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.car-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.car-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.car-card button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ section {
+    padding: 0 5%;
+}
