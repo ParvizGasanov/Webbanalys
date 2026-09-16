@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="sv">
     <head> 
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="layout.css">
         <title>Toyota Supra Mk3</title> 
     </head>
-
-
-
+    
     <body> 
-        
+
         <header class="main-header">
-            <a href="frontpaage.html" class="logo">
+            <a href="front_page.html" class="logo">
                 <h1>Dina Tidlösa Klassiker</h1>
             </a>
   
         <nav class="main-nav">
-            <a href="frontpaage.html">Hem</a>
+            <a href="front_page.html">Hem</a>
             <a href="about.html">Om oss</a>
             <a href="#">Kontakta oss</a>
             <a href="#">Produkter</a>
@@ -28,28 +27,39 @@
     <main> 
         
         <section> 
-            <div class="produkt-info">
-                <img src="images/toyota-supra-mk3.jpg" alt="Toyota Supra Mk3" width="500"> 
-            </div> 
+            <div class="produkt-info" itemscope itemtype="https://schema.org/Product">
+                <img src="images/toyota-supra-mk3.jpg" alt="Toyota Supra Mk3" width="500" itemprop="image"> 
         
-        </div class="text"> 
-        <h1>Toyota Supra Mk3</h1> 
-        <p> Klassisk Toyota Supra MK3 från 1986 som kombinerar tidstypisk japansk sportbilsdesign, 
-        körglädje och ikonisk 80-talskaraktär. En bil för dig som uppskattar den klassiska Supra-modellen
-        med sina karakteristiska linjer, långa motorhuv och sportiga proportioner. Supran erbjuder en härlig
-        körupplevelse med fokus på prestanda och körkänsla,samtidigt som den behåller den komfort och utrustning
-        som gjorde modellen attraktiv redan på 80-talet. En riktig entusiastbil och ett stycke japansk bilhistoria
-        som väcker uppmärksamhet vart den än kommer.
-         </p>
-         
+        <div class="text"> 
+        <hgroup>
+            <h1 itemprop="name">Toyota Supra Mk3</h1> 
+            <p itemprop="description">
+                Klassisk Toyota Supra MK3 från 1986 som kombinerar tidstypisk japansk sportbilsdesign, 
+                körglädje och ikonisk 80-talskaraktär. En bil för dig som uppskattar den klassiska Supra-modellen
+                med sina karakteristiska linjer, långa motorhuv och sportiga proportioner. Supran erbjuder en härlig
+                körupplevelse med fokus på prestanda och körkänsla,samtidigt som den behåller den komfort och utrustning
+                som gjorde modellen attraktiv redan på 80-talet. En riktig entusiastbil och ett stycke japansk bilhistoria
+                som väcker uppmärksamhet vart den än kommer.
+            </p>
+          </hgroup>
+
+
          <hr> 
-         <p>Årsmodell: 1986</p>
+         <p>Årsmodell: <span itemprop="releaseDate">1986</span></p>
          <p>Land: Japan</p>
-         <p>Kategori: Sportbil</p>
-         <p>Pris: 299 000 kr</p>
-         <button>Köp</button>
-         <a href="80_tal.html">Tillbaka</a> 
+         <p>Kategori: Sportbil <span itemprop="category" content="Sportbil"></span></p>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <p>Pris: <span itemprop="price" content="299000">299 000</span> kr</p>
+                <meta itemprop="priceCurrency" content="SEK"> 
+
+                <form id="purchase"> 
+                    <input type="submit" value="köp"/>
+                </form>
+                <a href="80_tal.html">Tillbaka</a>
+            </div>
         </div>
+    </div>
     
     </section>
 </main>
@@ -71,5 +81,37 @@
         </div>
     </footer> 
 
-<body>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'view_item',
+            ecommerce: {
+                currency: 'SEK',
+                value: 299000,
+                items: [{
+                    item_id: 'toyota_supra_mk3',
+                    item_name: 'Toyota Supra Mk3',
+                    item_category: 'Sportbil',
+                    price: 299000,
+                    quantity: 1 }] } });
+    </script>
+
+    <script> 
+        function sendPurchaseData() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'purchase',
+                ecommerce: {
+                    transaction_id: 'Tmk301',
+                    currency: 'SEK',
+                    value: 299000,
+                    items: [{
+                        item_id: 'toyota_supra_mk3',
+                        item_name: 'Toyota Supra Mk3',
+                        item_category: 'Sportbil',
+                        price: 299000,
+                        quantity: 1 }] } });
+        }
+    </script>
+</body>
 </html>

@@ -11,12 +11,12 @@
     <body> 
         
         <header class="main-header">
-            <a href="frontpaage.html" class="logo">
+            <a href="front_page.html" class="logo">
                 <h1>Dina Tidlösa Klassiker</h1>
             </a>
   
         <nav class="main-nav">
-            <a href="frontpaage.html">Hem</a>
+            <a href="front_page.html">Hem</a>
             <a href="about.html">Om oss</a>
             <a href="#">Kontakta oss</a>
             <a href="#">Produkter</a>
@@ -26,28 +26,38 @@
     <main> 
         
         <section> 
-            <div class="produkt-info"> 
-                <img src="images/bmw-m3-e30.jpeg" alt="BMW M3 E30" width="500"> 
-            </div>
+            <div class="produkt-info" itemscope itemtype="https://schema.org/Product"> 
+                <img src="images/bmw-m3-e30.jpeg" alt="BMW M3 E30" width="500" itemprop="image"> 
             
             <div class="text"> 
-                <h1>BMW M3 E30</h1> 
-                <p> Ikoniska BMW M3 E30 som kombinerar klassisk motorsportkänsla, tidlös design och 
-            en fantastisk körkaraktär. En av de mest legendariska modellerna från BMW M-historia, 
-            med sina karakteristiska skärmbreddare, sportiga proportioner och tydliga tävlingsarv. 
-            M3 E30 erbjuder en engagerande körupplevelse med fokus på precision, balans och körglädje. 
-            Den klassiska interiören och den tidstypiska designen förstärker känslan av att köra en riktig 
-            entusiastbil, samtidigt som bilens ikonstatus gör den till ett attraktivt samlarobjekt.
-            </p>
-            
+                <hgroup>
+                <h1 itemprop="name">BMW M3 E30</h1> 
+                <p itemprop="description">
+                    Ikoniska BMW M3 E30 som kombinerar klassisk motorsportkänsla, tidlös design och en
+                    fantastisk körkaraktär. En av de mest legendariska modellerna från BMW M-historia, 
+                    med sina karakteristiska skärmbreddare, sportiga proportioner och tydliga tävlingsarv. 
+                    M3 E30 erbjuder en engagerande körupplevelse med fokus på precision, balans och körglädje. 
+                    Den klassiska interiören och den tidstypiska designen förstärker känslan av att köra en riktig 
+                    entusiastbil, samtidigt som bilens ikonstatus gör den till ett attraktivt samlarobjekt.
+                </p>
+            </hgroup> 
+
             <hr> 
-            <p>Årsmodell: 1986</p>
-            <p>Land: Tyskland</p>
-            <p>Kategori: Sportbil</p>
-            <p>Pris: 349 000 kr</p>
-            <button>Köp</button>
+            <p>Årsmodell: <span itemprop="releaseDate">1986</span></p>
+            <p>Land: Tyskland </p>
+            <p>Kategori: <span itemprop="category" content="Sportbil">Sportbil</span></p>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <p>Pris: <span itemprop="price" content="349000">349 000</span> kr</p>
+                <meta itemprop="priceCurrency" content="SEK">
+        
+            <form id="purchase"> 
+                    <input type="submit" value="köp"/>
+                </form>
             <a href="80_tal.html">Tillbaka</a> 
            </div>
+        </div> 
+    </div> 
 
     </section>
     </main>
@@ -69,5 +79,40 @@
         </div>
     </footer> 
 
-<body>
+    <script> window.dataLayer = window.dataLayer || []; 
+        window.dataLayer.push({ 
+            event: 'view_item',
+            ecommerce: { 
+                currency: 'SEK', 
+                value: 349000, 
+                items: [
+                { item_id: 'bmw_m3_e30', 
+                 item_name: 'BMW M3 E30', 
+                 item_category: 'Sportbil', 
+                 price: 349000, 
+                 quantity: 1
+        }] } });
+    </script>
+
+    <script> 
+        function sendPurchaseData() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'purchase',
+                ecommerce: {
+                    transaction_id: 'Bmw03', 
+                    currency: 'SEK',
+                    value: 349000,
+                    items: [{
+                        item_id: 'bmw_m3_e30',
+                        item_name: 'BMW M3 E30',
+                        item_category: 'Sportbil',
+                        price: 349000,
+                        quantity: 1
+                    }]
+                }
+            });
+        }
+    </script>
+</body>
 </html>

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head> 
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KNKX34FH');</script>
+<!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="layout.css">
@@ -8,13 +17,18 @@
     <head>
    <body> 
 
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNKX34FH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <header class="main-header">
-        <a href="frontpaage.html" class="logo">
+        <a href="front_page.html" class="logo">
             <h1>Dina Tidlösa Klassiker</h1>
         </a>
   
         <nav class="main-nav">
-            <a href="frontpaage.html">Hem</a>
+            <a href="front_page.html">Hem</a>
             <a href="about.html">Om oss</a>
             <a href="#">Kontakta oss</a>
             <a href="#">Produkter</a>
@@ -29,24 +43,27 @@
 <main>
 
     <section>
-        <article class="bil" itemscope itemtype="https://schema.org/product">
+        <article class="bil" itemscope itemtype="https://schema.org/Product">
             <img src="images/toyota-supra-mk3.jpg" alt="Toyota Supra Mk3" itemprop="image">
             <div class="info"> 
                 <hgroup>
                     <h3 itemprop="name">Toyota Supra Mk3</h3>
                     <p itemprop="brand">Toyota</p>
                 </hgroup>
-            <p>Årsmodell: <span itemprop="releasedate">1986</span></p>
+            <p>Årsmodell: <span itemprop="releaseDate">1986</span></p>
             <p>Land: Japan</p>
-            <p itemprop="offers" itemscope itemtype="https://schema.org/Offer"></p>
-            <p>Kategori: Sportbil <meta itemprop="category" content="Sportbil"></p>
-            <p>Pris: <span itemprop="price">299 000</span> kr</p>
-            <meta itemprop="priceCurrency" content="SEK"> 
+            <p>Kategori: Sportbil <span itemprop="category" content="Sportbil"></span></p>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <p>Pris: <span itemprop="price" content="299000">299 000</span> kr</p>
+            <meta itemprop="priceCurrency" content="SEK">
+            </div>
+            
             <p>Klicka för mer info</p> <a href="toyota.html" itemprop="url">Mer info</a>
         </div>
     </article>
     
-    <article class="bil" itemscope itemtype="https://schema.org/product">
+    <article class="bil" itemscope itemtype="https://schema.org/Product">
         <img src="images/bmw-m3-e30.jpeg" alt="BMW M3 E30" itemprop="image">
         <div class="info">
             <hgroup> 
@@ -54,32 +71,37 @@
                 <p itemprop="brand">BMW</p>
             </hgroup> 
 
-            <p>Årsmodell: <span itemprop="releasedate">1986</span></p>
+            <p>Årsmodell: <span itemprop="releaseDate">1986</span></p>
             <p>Land: Tyskland</p>
+             <p>Kategori: Sportbil <meta itemprop="category" content="Sportbil"></p>
 
-            <p itemprop="offers" itemscope itemtype="https://schema.org/Offer"></p>
-            <p>Kategori: Sportbil <meta itemprop="category" content="Sportbil"></p>
-            <p>Pris: <span itemprop="price">349 000</span> kr</p>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer"> 
+            <p>Pris: <span itemprop="price" content="349000">349 000</span> kr</p>
             <meta itemprop="priceCurrency" content="SEK"> 
+            </div>
+
             <p>Klicka för mer info</p> <a href="bmw.html" itemprop="url">Mer info</a>
         </div>
     </article>
 
-   <article class="bil" itemscope itemtype="https://schema.org/product">
+   <article class="bil" itemscope itemtype="https://schema.org/Product">
         <img src="images/ferrari-testarossa.webp" alt="Ferrari Testarossa" itemprop="image">
         <div class="info"> 
-            <hgroup></hgroup>
+            <hgroup> 
                 <h3 itemprop="name">Ferrari Testarossa</h3>
                 <p itemprop="brand">Ferrari</p>
             </hgroup>
 
-        <p>Årsmodell: <span itemprop="releasedate">1984</span></p>
+        <p>Årsmodell: <span itemprop="releaseDate">1984</span></p>
         <p>Land: Italien</p>
+         <p>Kategori: Sportbil <meta itemprop="category" content="Sportbil"></p>
 
-        <p itemprop="offers" itemscope itemtype="https://schema.org/Offer"></p>
-        <p>Kategori: Sportbil <meta itemprop="category" content="Sportbil"></p>
-        <p>Pris: <span itemprop="price">1 200 000</span> kr</p>
+        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer"> 
+        <p>Pris: <span itemprop="price" content="1200000">1 200 000</span> kr</p>
         <meta itemprop="priceCurrency" content="SEK"> 
+
+        </div> 
+
         <p>Klicka för mer info</p> <a href="ferrari.html" itemprop="url">Mer info</a> 
     </div>
 </article>

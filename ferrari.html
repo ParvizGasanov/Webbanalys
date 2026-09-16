@@ -11,12 +11,12 @@
 
     <body> 
         <header class="main-header">
-            <a href="frontpaage.html" class="logo">
+            <a href="front_page.html" class="logo">
                 <h1>Dina Tidlösa Klassiker</h1>
             </a>
   
         <nav class="main-nav">
-            <a href="frontpaage.html">Hem</a>
+            <a href="front_page.html">Hem</a>
             <a href="about.html">Om oss</a>
             <a href="#">Kontakta oss</a>
             <a href="#">Produkter</a>
@@ -27,28 +27,40 @@
     <main> 
         
         <section> 
-            <div class="produkt-info"> 
-                <img src="images/ferrari-testarossa.webp" alt="Ferrari Testarossa" width="500"> 
-            </div>
-            
+            <div class="produkt-info" itemscope itemtype="https://schema.org/Product"> 
+                <img src="images/ferrari-testarossa.webp" alt="Ferrari Testarossa" width="500" itemprop="image"> 
+           
+
         </div class="text"> 
-        <h1>Ferrari Testarossa</h1> 
-        <p> Välutrustad Ferrari Testarossa från 1984 som kombinerar exklusiv italiensk design, 
+        <hgroup> 
+            <h1 itemprop="name">Ferrari Testarossa</h1> 
+            <p itemprop="description"> 
+            Välutrustad Ferrari Testarossa från 1984 som kombinerar exklusiv italiensk design, 
             klassisk V12-prestanda och ikonisk sportbilskaraktär. Utrustad med den legendariska 
             mittmonterade 12-cylindriga motorn, karakteristiska sidoluftintag och den tidstypiska 
             interiören som gör Testarossa till en av Ferraris mest välkända modeller. En exklusiv 
             och eftertraktad klassiker med fantastisk design, mäktigt motorljud och en unik närvaro, 
             en riktig drömbil för både entusiasten och samlaren.
            </p>
-           
+           </hgroup> 
+
            <hr> 
-           <p>Årsmodell: 1984</p>
+           <p>Årsmodell: <span itemprop="releaseDate">1984</span></p>
            <p>Land: Italien</p>
-           <p>Kategori: Sportbil</p>
-           <p>Pris: 1 200 000 kr</p>
-           <button>Köp</button>
-           <a href="80_tal.html">Tillbaka</a> 
-          </div>
+           <p>Kategori: Sportbil <span itemprop="category" content="Sportbil"></span></p>
+
+
+           <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+               <p>Pris: <span itemprop="price" content="1200000">1 200 000</span> kr</p>
+               <meta itemprop="priceCurrency" content="SEK">
+               
+               <form id="purchase"> 
+                    <input type="submit" value="köp"/>
+                </form>
+               <a href="80_tal.html">Tillbaka</a>
+           </div>
+        </div>
+    </div>
       
       </section>
     </main> 
@@ -70,5 +82,42 @@
         </div>
     </footer> 
 
-<body>
+    <script> window.dataLayer = window.dataLayer || []; 
+        window.dataLayer.push({ 
+            event: 'view_item', 
+            ecommerce: { 
+                currency: 'SEK',
+                value: 1200000, 
+                 items: [
+                 { item_id: 'ferrari_testarossa_1984', 
+                 item_name: 'Ferrari Testarossa', 
+                  item_category: 'Sportbil', 
+                  price: 1200000, 
+                  quantity: 1 
+            }] } }); 
+    </script>
+
+    <script> 
+        function sendPurchaseData() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'purchase',
+                ecommerce: {
+                    transaction_id: 'Ftst02',
+                    currency: 'SEK',
+                    value: 1200000,
+                    items: [{
+                        item_id: 'ferrari_testarossa',
+                        item_name: 'Ferrari Testarossa',
+                        item_category: 'Sportbil',
+                        price: 1200000,
+                        quantity: 1
+                    }]
+                }
+            });
+        }
+    </script>
+
+
+</body>
 </html>

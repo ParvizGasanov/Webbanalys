@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; 
     color: #333;
     line-height: 1.6;
 }
@@ -138,6 +138,7 @@ cursor: pointer;
 
 .produkt-info {
 display: flex;
+flex-direction: column;
 gap: 40px;
 max-width: 1200px;
 margin: 50px auto;
@@ -147,6 +148,7 @@ align-items: flex-start;
 .produkt-info img {
 width: 700px;
 height: auto;
+align-self: center;
 }
 
 .text {
